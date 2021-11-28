@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column (children: [
+      body: SizedBox(child:Column (children: [
         Container(
         width: 180,
         height: 180,
@@ -51,18 +51,24 @@ class _MyHomePageState extends State<MyHomePage> {
         Container(
           width: 180,
         height: 180,
-        color: Colors.green,
         margin: const EdgeInsets.only( left: 150),
           child: Row(children:[
             Container(
-        width: 376,
+        width: 70,
         height: 294,
         color: Colors.green,
-        margin: const EdgeInsets.only(bottom: 22),)
+        margin: const EdgeInsets.only(left: 0),),
+
+        Container(
+        width: 70,
+        height: 294,
+        color: Colors.green,
+        margin: const EdgeInsets.only(left: 40),)
             ]
           ,)
         ),
-      ],)
+      ],))
     );
   }
 }
+
